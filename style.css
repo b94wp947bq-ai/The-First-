@@ -431,31 +431,33 @@ a {
     margin-bottom: 6px;
 }
 
-/* ===== Адаптив для телефонов ===== */
+/* ============================================ */
+/* ===== АДАПТИВ ДЛЯ ТЕЛЕФОНОВ (ДО 768px) ===== */
+/* ============================================ */
 max-width: 768px {
     .container {
-        padding: 0 16px;
+        padding: 0 15px;
     }
 
     .hero {
-        height: 60vh;
-        min-height: 350px;
+        height: 55vh;
+        min-height: 300px;
     }
 
     .hero__title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .hero__subtitle {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .section {
-        padding: 50px 0;
+        padding: 45px 0;
     }
 
     .section__title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         margin-bottom: 30px;
     }
 
@@ -464,82 +466,100 @@ max-width: 768px {
         margin: 12px auto 0;
     }
 
+    /* О группе — фото сверху, текст снизу */
     .about__grid {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 20px;
     }
 
-    .about__text p {
-        font-size: 0.95rem;
+    .about__image {
+        order: -1;
     }
 
+    .about__te xt p {
+        font-size: 0.9rem;
+    }
+
+    /* Галерея — 2 колонки */
     .gallery__grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 8px;
     }
 
     .gallery__item:hover {
         transform: none;
-        box-shad ow: none;
+        box-shadow: none;
     }
 
     .gallery__item img {
-        height: 160px;
+        height: 150px;
     }
 
     .gallery__caption {
-        font-size: 0.75rem;
-        margin-top: 5px;
+        font-size: 0.7rem;
+        margin-top: 4px;
     }
 
+    /* Контакты — всё в колонку */
     .contacts__grid {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 20px;
     }
 
+    .contacts__info h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .contacts__info p,
+    .contacts__info a {
+        font-size: 0.9rem;
+    }
+
+    /* Новости */
     .news-feed {
         gap: 20px;
     }
 
     .news-card__media--1 img {
-        height: 220px;
+        height: 200px;
     }
 
     .news-card__media--2 img {
-        height: 180px;
+        height: 160px;
     }
 
     .news-card__media--3 img {
-        height: 150px;
-    }
-
-    .news-card__media--4 img {
         height: 130px;
     }
 
+    .news-card__media--4 img {
+        height: 110px;
+    }
+
     .news-card__video {
-        height: 220px;
+        height: 200px;
     }
 
     .news-card__body {
-        padding: 16px;
+        padding: 15px;
     }
 
     .news-card__title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .news-card__date {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .news-card__text {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .footer {
-        padding: 20px 16px;
-        font-size: 0.75rem;
+        padding: 20px 15px;
+        font-size: 0.7rem;
     }
 }
 
