@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости — Жены Героев</title>
+    <link rel="stylesheet" href="main.css?v=2">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">
+                <img src="img/logo.jpg" alt="Логотип" class="logo__img">
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html#hero" class="nav__link">Главная</a></li>
+                    <li><a href="index.html#about" class="nav__link">Группа</a></li>
+                    <li><a href="index.html#gallery" class="nav__link">Галерея</a></li>
+                    <li><a href="index.html#contacts" class="nav__link">Контакты</a></li>
+                    <li><a href="news.html" class="nav__link active">Новости</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section news-page">
+        <div class="container">
+            <h2 class="section__title">Новости</h2>
+            <div class="news-feed">
+                <!-- Новость 1 -->
+                <article class="news-card">
+                    <div class="news-card__media-wrap news-card__media--1">
+                        <img src="img/gal1.jpg" alt="Первый концерт группы">
+                    </div>
+                    <div class="news-card__body">
+                        <h3 class="news-card__title">Китель победы</h3>
+                        <p class="news-card__date">9 мая 2026</p>
+                        <p class="news-card__text">В преддверии Дня Победы в г.о.Клин состоялось торжественное открытие
+                            фотовыставки Всероссийского проекта «Китель Победы»!..</p>
+                    </div>
+                </article>
+
+                <!-- Новость 2 -->
+                <article class="news-card">
+                    <div class="news-card__media-wrap news-card__media--3">
+                        <img src="img/gal2.jpg" alt="Репетиция 1">
+                        <img src="img/gal2-1.jpg" alt="Репетиция 2">
+                        <img src="img/gal2-2.jpg" alt="Репетиция 3">
+                    </div>
+                    <div class="news-card__body">
+                        <h3 class="news-card__title">Концерт в Медицинском центре «Голубое»</h3>
+                        <p class="news-card__date">21 апреля 2026</p>
+                        <p class="news-card__text">Вокальная группа «Жёны Героев» провела концертную программу для
+                            военнослужащих...</p>
+                    </div>
+                </article>
+
+                <!-- Новость 3 -->
+                <article class="news-card">
+                    <div class="news-card__media-wrap news-card__media--2">
+                        <img src="img/gal3.jpg" alt="День города 1">
+                        <img src="img/gal3-1.jpg" alt="День города 2">
+                    </div>
+                    <div class="news-card__body">
+                        <h3 class="news-card__title">День специалиста по радиоэлектронной борьбе</h3>
+                        <p class="news-card__date">17 апреля 2026</p>
+                        <p class="news-card__text">В Солнечногорске состоялось торжественное мероприятие...</p>
+                    </div>
+                </article>
+
+                <!-- Новость 4 -->
+                <article class="news-card">
+                    <div class="news-card__media-wrap news-card__media--3">
+                        <img src="img/gal4.jpg" alt="Фото 1">
+                        <img src="img/gal4-1.jpg" alt="Фото 2">
+                        <img src="img/gal4-2.jpg" alt="Фото 3">
+                    </div>
+                    <div class="news-card__body">
+                        <h3 class="news-card__title">Сотрудничество с группой SPLAV</h3>
+                        <p class="news-card__date">11 апреля 2026</p>
+                        <p class="news-card__text">Совместно с группой SPLAV вокальная группа «ЖЁНЫ ГЕРОЕВ» исполнила
+                            авторскую песню Алексея Лебедева «Отважные».</p>
+                    </div>
+                </article>
+
+                <!-- Новость 5 со слайдером -->
+                <article class="news-card">
+                    <div class="news-card__slider" data-slider>
+                        <div class="news-card__slides" data-slides>
+                            <img src="img/news1.jpg" alt="Фото 1">
+                            <img src="img/news2.jpg" alt="Фото 2">
+                            <img src="img/news3.jpg" alt="Фото 3">
+                            <img src="img/news4.jpg" alt="Фото 4">
+                        </div>
+                        <div class="news-card__dots" data-dots></div>
+                    </div>
+                    <div class="news-card__body">
+                        <h3 class="news-card__title">Выступление в студии "Новые Голоса"</h3>
+                        <p class="news-card__date">10 мая 2026</p>
+                        <p class="news-card__text">Представляем вашему вниманию полный фотоотчёт. Листайте, чтобы
+                            увидеть все кадры.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 Жены Героев. Все права защищены.</p>
+            <p>Организатор вокального проекта «Жены Героев» — Елена Васильевна Чеснокова</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
